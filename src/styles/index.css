@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+
+:root {
+  --main-font-size: 18px;
+  --font-600: 600;
+  --font-700: 700;
+  --font-900: 900;
+
+  --font-family-barlow: Barlow;
+  --font-family-fraunces: Fraunces;
+
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --dark-desatured: hsl(167, 40%, 24%);
+  --dark-blue: hsl(198, 62%, 26%);
+  --dark-moderate-cyan: hsl(168, 34%, 41%);
+  --bg-green-footer: #90d4c5;
+  --text-color-green: #1d2b3b;
+
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+
+  --background-header: url('../assets/desktop/image-header.jpg');
+
+  --background-transform: url('../assets/desktop/image-transform.jpg');
+  --background-stand-out: url('../assets/desktop/image-stand-out.jpg');
+  --background-graphic-design: url('../assets/desktop/image-graphic-design.jpg');
+  --background-photography: url('../assets/desktop/image-photography.jpg');
+  
+  --background-milkbottles: url('../assets/desktop/image-gallery-milkbottles.jpg');
+  --background-orange: url('../assets/desktop/image-gallery-orange.jpg');
+  --background-cone: url('../assets/desktop/image-gallery-cone.jpg');
+  --background-sugarcubes: url('../assets/desktop/image-gallery-sugarcubes.jpg');
+
+  --header-padding-left: 2rem;
+  --header-padding-right: 2rem;
+  --header-h1-font-size: 32px;
+  --header-buttons-display: flex;
+  --menu-hamburger-display: none;
+
+  --mosaic-grid-tc: 50fr 50fr;
+  --mosaic-brand-stand-padding: 18% 15%;
+  --mosaic-brand-stand-h2-font-size: 26px;
+  --mosaic-brand-stand-p-font-size: 12px;
+  --mosaic-brand-stand-p-line-height: 18px;
+  --mosaic-graphic-photography-h4-font-size: 26px;
+  --mosaic-graphic-photography-span-font-size: 14px;
+  --mosaic-graphic-photography-span-line-height: 20px;
+  --mosaic-graphic-photography-span-padding: 0 1rem;
+
+  --clients-padding: 120px 2rem;
+  --clients-h1-font-size: 24px;
+  --clients-h1-margin: 0 0 5rem;
+  --clients-opinions-grid-tc: 33fr 33fr 33fr;
+  --clients-opinions-img-mb: 40px;
+  --clients-opinions-description-font-size: 14px;
+  --clients-opinions-description-line-height: 22px;
+  --clients-opinions-description-padding: 0;
+  --clients-opinions-description-mb: 4rem;
+  
+  --gallery-grid-tc: 25fr 25fr 25fr 25fr;
+
+  --footer-height: 250px;
+  --footer-buttons-margin: 0 auto 3rem;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --background-header: url('../assets/mobile/image-header.jpg');
+    
+    --background-transform: url('../assets/mobile/image-transform.jpg');
+    --background-stand-out: url('../assets/mobile/image-stand-out.jpg');
+    --background-graphic-design: url('../assets/mobile/image-graphic-design.jpg');
+    --background-photography: url('../assets/mobile/image-photography.jpg');
+
+    --background-milkbottles: url('../assets/mobile/image-gallery-milkbottles.jpg');
+    --background-orange: url('../assets/mobile/image-gallery-orange.jpg');
+    --background-cone: url('../assets/mobile/image-gallery-cone.jpg');
+    --background-sugarcubes: url('../assets/mobile/image-gallery-sugarcubes.jpg');
+
+    --header-padding-left: 1rem;
+    --header-padding-right: 1rem;
+    --header-h1-font-size: 40px;
+    --header-buttons-display: none;
+    --menu-hamburger-display: block;
+
+    --mosaic-grid-tc: 100fr;
+    --mosaic-brand-stand-padding: 3rem 1.5rem;
+    --mosaic-brand-stand-h2-font-size: 32px;
+    --mosaic-brand-stand-p-font-size: 18px;
+    --mosaic-brand-stand-p-line-height: 28px;
+    --mosaic-graphic-photography-h4-font-size: 30px;
+    --mosaic-graphic-photography-span-font-size: 16px;
+    --mosaic-graphic-photography-span-line-height: 26px;
+    --mosaic-graphic-photography-span-padding: 0;
+
+    --clients-padding: 4rem 0;
+    --clients-h1-font-size: 16px;
+    --clients-h1-margin: 0 0 60px;
+    --clients-opinions-grid-tc: 100fr;
+    --clients-opinions-img-mb: 1.5rem;
+    --clients-opinions-description-font-size: 18px;
+    --clients-opinions-description-line-height: 30px;
+    --clients-opinions-description-padding: 0 1rem;
+    --clients-opinions-description-mb: 2rem;
+
+    --gallery-grid-tc: 50fr 50fr;
+
+    --footer-height: 350px;
+    --footer-buttons-margin: 0 auto 4rem;
+  }
+}
+
+html {
+  background-color: var(--white);
+}
+
+* {
+  box-sizing: border-box;
+  font-size: var(--main-font-size);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-barlow), -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-weight: var(--font-600);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 1140px;
+  margin: 0 auto;
+  color: var(--text-color-green);
+}
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+}
