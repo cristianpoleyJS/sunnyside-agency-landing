@@ -18,7 +18,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: var(--clients-opinions-grid-tc);
-    grid-gap: 2rem;
+    grid-gap: 32px;
 }
 
 .clients-opinions img {
@@ -32,7 +32,7 @@
     font-style: normal;
     font-size: var(--clients-opinions-description-font-size);
     color: var(--very-dark-grayish-blue);
-    margin-bottom: 4rem;
+    margin-bottom: 64px;
     line-height: var(--clients-opinions-description-line-height);
     padding: var(--clients-opinions-description-padding);
 }

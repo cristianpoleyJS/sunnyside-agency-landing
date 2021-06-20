@@ -27,7 +27,7 @@
 .mosaic-stand p {
     line-height: var(--mosaic-brand-stand-p-line-height);
     color: var(--dark-grayish-blue);
-    margin-bottom: 2rem;
+    margin-bottom: 32px;
     font-size: var(--mosaic-brand-stand-p-font-size);
 }
 .mosaic-brand h4,
@@ -93,7 +93,7 @@
     font-size: var(--mosaic-graphic-photography-h4-font-size);
     font-family: var(--font-family-fraunces);
     font-weight: var(--font-900);
-    margin: 1.5rem 0 1rem;
+    margin: 1.80px 0 16px;
 }
 .mosaic-graphic-design-content {
     color: var(--dark-desatured);

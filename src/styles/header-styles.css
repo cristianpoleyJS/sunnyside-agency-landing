@@ -3,9 +3,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-top: 2rem;
+    padding-top: 32px;
     padding-right: var(--header-padding-right);
-    padding-bottom: 2rem;
+    padding-bottom: 32px;
     padding-left: var(--header-padding-left);
     height: 560px;
 }
@@ -26,7 +26,7 @@
 
 .header h1 img {
     display: block;
-    margin: 3rem auto;
+    margin: 48px auto;
     width: 34px;
 }
 
