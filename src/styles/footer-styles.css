@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 200px;
+    max-width: 230px;
 }
 .footer-content > * {
     flex: 1 0 100%;
@@ -39,12 +39,12 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: 100px;
+    max-width: 130px;
 }
 
 .footer-social-media img {
     cursor: pointer;
-    width: 14px;
+    width: 16px;
 }
 .footer-social-media img:hover {
     filter: brightness(1000%);

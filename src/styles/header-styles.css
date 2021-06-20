@@ -3,40 +3,53 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 500px;
     padding: 2rem;
+    height: 560px;
+}
+
+.header-content {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .header h1 {
-    flex: 1 0 100%;
     text-align: center;
     font-family: var(--font-family-fraunces);
     font-size: 32px;
     letter-spacing: 2px;
     color: var(--white);
-    height: 100%;
+    margin-top: 4rem;
+}
+
+.header h1 img {
+    display: block;
+    margin: 3rem auto;
+    width: 34px;
 }
 
 .header-buttons {
     display: flex;
-    flex: 0 0 300px;
+    flex: 0 0 350px;
     justify-content: space-between;
     height: max-content;
-    margin-bottom: 50px;
 }
 
 .header-buttons a {
     color: var(--white);
 }
 
-.header-buttons a:hover {
-    background-color: var(--dark-moderate-cyan);
+.header-buttons a.contact {
+    text-align: center;
+    border-radius: 12px;
+    background-color: #6fcfff;
+    text-transform: uppercase;
+    font-family: var(--font-family-fraunces);
+    width: 88px;
+    box-shadow: 0px 0px 0px 16px #6fcfff;
 }
 
-.header-buttons a.contact {
+.header-buttons a.contact:hover {
     background-color: var(--white);
-    color: #1d2b3b;
+    color: var(--text-color-green);
+    box-shadow: 0px 0px 0px 16px var(--white);
 }

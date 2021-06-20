@@ -7,7 +7,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 580px;
+    height: 400px;
 }
 
 .mosaic-brand,
@@ -19,13 +19,14 @@
 .mosaic-stand h2 {
     font-family: var(--font-family-fraunces);
     font-weight: var(--font-900);
-    font-size: 32px;
+    font-size: 26px;
 }
 .mosaic-brand p,
 .mosaic-stand p {
-    line-height: 28px;
+    line-height: 18px;
     color: var(--dark-grayish-blue);
     margin-bottom: 2rem;
+    font-size: 12px;
 }
 .mosaic-brand h4,
 .mosaic-stand h4 {
@@ -33,23 +34,30 @@
     font-family: var(--font-family-fraunces);
     cursor: pointer;
     position: relative;
+    font-size: 16px;
+    font-weight: 900;
 }
 .mosaic-brand h4:after,
 .mosaic-stand h4:after {
     z-index: -1;
-    height: 12px;
     content: '';
+    height: 10px;
     border-radius: 8px;
-    top: 14px;
+    top: 13px;
     left: -8px;
-    width: 144px;
+    width: 134px;
     position: absolute;
+    filter: opacity(0.2);
 }
 .mosaic-brand h4:after {
     background-color: var(--yellow);
 }
 .mosaic-stand h4:after {
     background-color: var(--soft-red);
+}
+.mosaic-brand h4:hover:after,
+.mosaic-stand h4:hover:after {
+    filter: opacity(1);
 }
 
 .mosaic-transform {
@@ -73,15 +81,16 @@
 .mosaic-photography-content {
     width: 100%;
     position: absolute;
-    padding: 0 130px;
+    margin: 0 auto;
     top: 58%;
 }
 
 .mosaic-graphic-design-content h4,
 .mosaic-photography-content h4 {
-    font-size: 30px;
+    font-size: 26px;
     font-family: var(--font-family-fraunces);
     font-weight: var(--font-900);
+    margin: 1.5rem 0 1rem;
 }
 .mosaic-graphic-design-content {
     color: var(--dark-desatured);
@@ -92,7 +101,11 @@
 
 .mosaic-graphic-design-content span,
 .mosaic-photography-content span {
-    line-height: 28px;
+    line-height: 20px;
+    max-width: 340px;
+    display: inline-block;
+    font-size: 14px;
+    padding: 0 1rem;
 }
 
 @media (max-width: 375px) {

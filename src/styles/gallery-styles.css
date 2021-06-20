@@ -1,6 +1,6 @@
 .gallery {
     display: grid;
-    height: 450px;
+    height: 360px;
     grid-template-columns: 25fr 25fr 25fr 25fr;
 }
 
