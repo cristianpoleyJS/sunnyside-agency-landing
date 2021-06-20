@@ -2,8 +2,8 @@ import React from 'react'
 import '../styles/header-styles.css'
 import '../styles/menu-hamburger.css'
 import Logo from '../assets/Logo.jsx'
-import iconHamburger from '../assets/icon-hamburger.svg'
 import arrow from '../assets/icon-arrow-down.svg'
+import iconHamburger from '../assets/icon-hamburger.svg'
 
 export default function Header() {
   return (

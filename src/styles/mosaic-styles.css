@@ -1,6 +1,6 @@
 .mosaic {
     display: grid;
-    grid-template-columns: 50fr 50fr;
+    grid-template-columns: var(--mosaic-grid-tc);
 }
 
 .mosaic > * {
@@ -13,20 +13,22 @@
 .mosaic-brand,
 .mosaic-stand {
     text-align: left;
-    padding: 18% 15%;
+    padding: var(--mosaic-brand-stand-padding);
 }
+
 .mosaic-brand h2,
 .mosaic-stand h2 {
     font-family: var(--font-family-fraunces);
     font-weight: var(--font-900);
-    font-size: 26px;
+    font-size: var(--mosaic-brand-stand-h2-font-size);
 }
+
 .mosaic-brand p,
 .mosaic-stand p {
-    line-height: 18px;
+    line-height: var(--mosaic-brand-stand-p-line-height);
     color: var(--dark-grayish-blue);
     margin-bottom: 2rem;
-    font-size: 12px;
+    font-size: var(--mosaic-brand-stand-p-font-size);
 }
 .mosaic-brand h4,
 .mosaic-stand h4 {
@@ -88,7 +90,7 @@
 
 .mosaic-graphic-design-content h4,
 .mosaic-photography-content h4 {
-    font-size: 26px;
+    font-size: var(--mosaic-graphic-photography-h4-font-size);
     font-family: var(--font-family-fraunces);
     font-weight: var(--font-900);
     margin: 1.5rem 0 1rem;
@@ -102,51 +104,23 @@
 
 .mosaic-graphic-design-content span,
 .mosaic-photography-content span {
-    line-height: 20px;
+    line-height: var(--mosaic-graphic-photography-span-line-height);
     max-width: 340px;
     display: inline-block;
-    font-size: 14px;
-    padding: 0 1rem;
+    font-size: var(--mosaic-graphic-photography-span-font-size);
+    padding: var(--mosaic-graphic-photography-span-padding);
 }
 
 @media (max-width: 768px) {
-    .mosaic {
-        grid-template-columns: 100fr;
-    }
 
     .mosaic > * {
         text-align: center;
-    }
-
-    .mosaic-brand,
-    .mosaic-stand {
-        padding: 3rem 1.5rem;
-    }
-    .mosaic-brand h2,
-    .mosaic-stand h2 {
-        font-size: 32px;
-    }
-    .mosaic-brand p,
-    .mosaic-stand p {
-        font-size: 18px;
-        line-height: 28px;
     }
 
     .mosaic-brand h4,
     .mosaic-stand h4 {
         margin: 0 auto;
     }
-    .mosaic-graphic-design-content h4,
-    .mosaic-photography-content h4 {
-        font-size: 30px;
-    }
-    .mosaic-graphic-design-content span,
-    .mosaic-photography-content span {
-        font-size: 16px;
-        line-height: 26px;
-        padding: 0;
-    }
-
     .mosaic-brand {
         order: 1;
         height: 440px;

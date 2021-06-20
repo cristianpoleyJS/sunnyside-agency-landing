@@ -1,15 +1,15 @@
 .clients {
-    padding: 120px 2rem;
+    padding: var(--clients-padding);
     text-align: center;
 }
 
 .clients h1 {
     text-transform: uppercase;
-    margin: 0 0 5rem;
+    margin: var(--clients-h1-margin);
     color: var(--grayish-blue);
     font-weight: var(--font-700);
     font-family: var(--font-family-fraunces);
-    font-size: 24px;
+    font-size: var(--clients-h1-font-size);
     letter-spacing: 4px;
     font-weight: 900;
 }
@@ -17,23 +17,24 @@
 .clients-opinions {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 33fr 33fr 33fr;
+    grid-template-columns: var(--clients-opinions-grid-tc);
     grid-gap: 2rem;
 }
 
 .clients-opinions img {
     border-radius: 100%;
     width: 76px;
-    margin-bottom: 40px;
+    margin-bottom: var(--clients-opinions-img-mb);
 }
 
 .clients-opinions-description {
     display: block;
     font-style: normal;
-    font-size: 14px;
+    font-size: var(--clients-opinions-description-font-size);
     color: var(--very-dark-grayish-blue);
     margin-bottom: 4rem;
-    line-height: 22px;
+    line-height: var(--clients-opinions-description-line-height);
+    padding: var(--clients-opinions-description-padding);
 }
 
 .clients-opinions-name-position span {
@@ -47,25 +48,4 @@
     margin-top: 12px;
     display: block;
     color: var(--grayish-blue);
-}
-@media (max-width: 768px) {
-    .clients-opinions {
-        grid-template-columns: 100fr;
-    }
-    .clients {
-        padding: 4rem 0;
-    }
-    .clients h1 {
-        font-size: 16px;
-        margin: 0 0 60px;
-    }
-    .clients-opinions img {
-        margin-bottom: 1.5rem;
-    }
-    .clients-opinions-description {
-        font-size: 18px;
-        line-height: 30px;
-        padding: 0 1rem;
-        margin-bottom: 2rem;
-    }
 }

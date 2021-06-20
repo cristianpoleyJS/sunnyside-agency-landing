@@ -1,5 +1,5 @@
 .menu-hamburger {
-    display: none;
+    display: var(--menu-hamburger-display);
 }
 
 ul {
@@ -61,15 +61,4 @@ li a.contact {
     width: 106px;
     display: inline-block;
     margin-top: 1rem;
-}
-
-
-@media (max-width: 768px) {
-    .menu-hamburger {
-        display: block;
-    }
-
-    .header-buttons {
-        display: none;
-    }
 }

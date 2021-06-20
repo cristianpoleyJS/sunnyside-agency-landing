@@ -1,7 +1,7 @@
 .footer {
     text-align: center;
     background-color: var(--bg-green-footer);
-    height: 250px;
+    height: var(--footer-height);
     position: relative;
     padding: 3rem 0;
 }
@@ -25,7 +25,7 @@
 .footer-buttons {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto 3rem;
+    margin: var(--footer-buttons-margin);
 }
 
 .footer-buttons a {
@@ -53,15 +53,8 @@
 }
 
 @media (max-width: 768px) {
-    .footer {
-        height: 350px;
-    }
-
     .footer-buttons a {
         font-size: 16px;
         filter: brightness(1.6);
-    }
-    .footer-buttons {
-        margin: 0 auto 4rem;
     }
 }

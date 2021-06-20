@@ -1,7 +1,7 @@
 .gallery {
     display: grid;
     height: 360px;
-    grid-template-columns: 25fr 25fr 25fr 25fr;
+    grid-template-columns: var(--gallery-grid-tc);
 }
 
 .gallery * {
@@ -21,10 +21,4 @@
 }
 .gallery-sugarcubes {
     background-image: var(--background-sugarcubes);
-}
-
-@media (max-width: 768px) {
-    .gallery {
-        grid-template-columns: 50fr 50fr;
-    }
 }
