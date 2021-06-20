@@ -36,8 +36,8 @@
   --background-cone: url('../assets/desktop/image-gallery-cone.jpg');
   --background-sugarcubes: url('../assets/desktop/image-gallery-sugarcubes.jpg');
 
-  --header-padding-left: 2rem;
-  --header-padding-right: 2rem;
+  --header-padding-left: 32px;
+  --header-padding-right: 32px;
   --header-h1-font-size: 32px;
   --header-buttons-display: flex;
   --menu-hamburger-display: none;
@@ -50,22 +50,22 @@
   --mosaic-graphic-photography-h4-font-size: 26px;
   --mosaic-graphic-photography-span-font-size: 14px;
   --mosaic-graphic-photography-span-line-height: 20px;
-  --mosaic-graphic-photography-span-padding: 0 1rem;
+  --mosaic-graphic-photography-span-padding: 0 16px;
 
-  --clients-padding: 120px 2rem;
+  --clients-padding: 120px 32px;
   --clients-h1-font-size: 24px;
-  --clients-h1-margin: 0 0 5rem;
+  --clients-h1-margin: 0 0 80px;
   --clients-opinions-grid-tc: 33fr 33fr 33fr;
   --clients-opinions-img-mb: 40px;
   --clients-opinions-description-font-size: 14px;
   --clients-opinions-description-line-height: 22px;
   --clients-opinions-description-padding: 0;
-  --clients-opinions-description-mb: 4rem;
+  --clients-opinions-description-mb: 64px;
   
   --gallery-grid-tc: 25fr 25fr 25fr 25fr;
 
   --footer-height: 250px;
-  --footer-buttons-margin: 0 auto 3rem;
+  --footer-buttons-margin: 0 auto 48px;
 }
 
 @media (max-width: 768px) {
@@ -82,14 +82,14 @@
     --background-cone: url('../assets/mobile/image-gallery-cone.jpg');
     --background-sugarcubes: url('../assets/mobile/image-gallery-sugarcubes.jpg');
 
-    --header-padding-left: 1rem;
-    --header-padding-right: 1rem;
+    --header-padding-left: 16px;
+    --header-padding-right: 16px;
     --header-h1-font-size: 40px;
     --header-buttons-display: none;
     --menu-hamburger-display: block;
 
     --mosaic-grid-tc: 100fr;
-    --mosaic-brand-stand-padding: 3rem 1.5rem;
+    --mosaic-brand-stand-padding: 48px 1.80px;
     --mosaic-brand-stand-h2-font-size: 32px;
     --mosaic-brand-stand-p-font-size: 18px;
     --mosaic-brand-stand-p-line-height: 28px;
@@ -98,20 +98,20 @@
     --mosaic-graphic-photography-span-line-height: 26px;
     --mosaic-graphic-photography-span-padding: 0;
 
-    --clients-padding: 4rem 0;
+    --clients-padding: 64px 0;
     --clients-h1-font-size: 16px;
     --clients-h1-margin: 0 0 60px;
     --clients-opinions-grid-tc: 100fr;
-    --clients-opinions-img-mb: 1.5rem;
+    --clients-opinions-img-mb: 1.80px;
     --clients-opinions-description-font-size: 18px;
     --clients-opinions-description-line-height: 30px;
-    --clients-opinions-description-padding: 0 1rem;
-    --clients-opinions-description-mb: 2rem;
+    --clients-opinions-description-padding: 0 16px;
+    --clients-opinions-description-mb: 32px;
 
     --gallery-grid-tc: 50fr 50fr;
 
     --footer-height: 350px;
-    --footer-buttons-margin: 0 auto 4rem;
+    --footer-buttons-margin: 0 auto 64px;
   }
 }
 
