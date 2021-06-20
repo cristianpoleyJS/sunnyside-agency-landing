@@ -44,15 +44,17 @@
 .header-buttons a.contact {
     text-align: center;
     border-radius: 12px;
-    background-color: #6fcfff;
-    text-transform: uppercase;
-    font-family: var(--font-family-fraunces);
-    width: 88px;
-    box-shadow: 0px 0px 0px 16px #6fcfff;
-}
-
-.header-buttons a.contact:hover {
     background-color: var(--white);
     color: var(--text-color-green);
     box-shadow: 0px 0px 0px 16px var(--white);
+
+    text-transform: uppercase;
+    font-family: var(--font-family-fraunces);
+    width: 88px;
+}
+
+.header-buttons a.contact:hover {
+    color: var(--white);
+    background-color: #6fcfff;
+    box-shadow: 0px 0px 0px 16px #6fcfff;
 }
