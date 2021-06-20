@@ -1,0 +1,102 @@
+.mosaic {
+    display: grid;
+    grid-template-columns: 50fr 50fr;
+}
+
+.mosaic > * {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 580px;
+}
+
+.mosaic-brand,
+.mosaic-stand {
+    text-align: left;
+    padding: 18% 15%;
+}
+.mosaic-brand h2,
+.mosaic-stand h2 {
+    font-family: var(--font-family-fraunces);
+    font-weight: var(--font-900);
+    font-size: 32px;
+}
+.mosaic-brand p,
+.mosaic-stand p {
+    line-height: 28px;
+    color: var(--dark-grayish-blue);
+    margin-bottom: 2rem;
+}
+.mosaic-brand h4,
+.mosaic-stand h4 {
+    text-transform: uppercase;
+    font-family: var(--font-family-fraunces);
+    cursor: pointer;
+    position: relative;
+}
+.mosaic-brand h4:after,
+.mosaic-stand h4:after {
+    z-index: -1;
+    height: 12px;
+    content: '';
+    border-radius: 8px;
+    top: 14px;
+    left: -8px;
+    width: 144px;
+    position: absolute;
+}
+.mosaic-brand h4:after {
+    background-color: var(--yellow);
+}
+.mosaic-stand h4:after {
+    background-color: var(--soft-red);
+}
+
+.mosaic-transform {
+    background-image: var(--background-transform);
+}
+.mosaic-stand-out {
+    background-image: var(--background-stand-out);
+}
+.mosaic-graphic-design {
+    position: relative;
+    text-align: center;
+    background-image: var(--background-graphic-design);
+}
+.mosaic-photography {
+    position: relative;
+    text-align: center;
+    background-image: var(--background-photography);
+}
+
+.mosaic-graphic-design-content,
+.mosaic-photography-content {
+    width: 100%;
+    position: absolute;
+    padding: 0 130px;
+    top: 58%;
+}
+
+.mosaic-graphic-design-content h4,
+.mosaic-photography-content h4 {
+    font-size: 30px;
+    font-family: var(--font-family-fraunces);
+    font-weight: var(--font-900);
+}
+.mosaic-graphic-design-content {
+    color: var(--dark-desatured);
+}
+.mosaic-photography-content {
+    color: var(--dark-blue);
+}
+
+.mosaic-graphic-design-content span,
+.mosaic-photography-content span {
+    line-height: 28px;
+}
+
+@media (max-width: 375px) {
+    .mosaic {
+        grid-template-columns: 100fr;
+    }
+}

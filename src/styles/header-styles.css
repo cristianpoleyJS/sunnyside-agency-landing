@@ -1,0 +1,42 @@
+.header {
+    background-image: var(--background-header);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header h1 {
+    flex: 1 0 100%;
+    text-align: center;
+    font-family: var(--font-family-fraunces);
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: var(--white);
+    height: 100%;
+}
+
+.header-buttons {
+    display: flex;
+    flex: 0 0 300px;
+    justify-content: space-between;
+    height: max-content;
+    margin-bottom: 50px;
+}
+
+.header-buttons a {
+    color: var(--white);
+}
+
+.header-buttons a:hover {
+    background-color: var(--dark-moderate-cyan);
+}
+
+.header-buttons a.contact {
+    background-color: var(--white);
+    color: #1d2b3b;
+}
