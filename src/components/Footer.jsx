@@ -10,19 +10,19 @@ export default function Footer() {
   return (
     <section className="footer">
         <div className="footer-content">
-          <span className="footer-logo">
+          <h4 className="footer-logo">
             <Logo height={30} width={124} fill={'#2d7363'} />
-          </span>
+          </h4>
           <div className="footer-buttons">
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
+            <a>About</a>
+            <a>Services</a>
+            <a>Projects</a>
           </div>
           <div className="footer-social-media">
-            <img src={facebook} />
-            <img src={instagram} />
-            <img src={twitter} />
-            <img src={pinterest} />
+            <img src={facebook} alt="Facebook"/>
+            <img src={instagram} alt="Instagram"/>
+            <img src={twitter} alt="Twitter"/>
+            <img src={pinterest} alt="Pinterest"/>
           </div>
         </div>
     </section>

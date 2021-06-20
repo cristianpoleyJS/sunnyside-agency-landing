@@ -12,49 +12,49 @@ export default function Header() {
             <Logo className="header-logo" height={30} fill={'#fff'} />
             <nav className="menu-hamburger">
                 <input type="checkbox" id="menu" />
-                <label for="menu"><img src={iconHamburger} /></label>
+                <label for="menu"><img src={iconHamburger} alt="Ico Hamburger"/></label>
                 <ul> 
                     <li className="arrow-hamburger" />
                     <li>
-                        <a href="#about">
+                        <a>
                             About
                         </a>
                     </li>
                     <li>
-                        <a href="#services">
+                        <a>
                             Services
                         </a>
                     </li>
                     <li>
-                        <a href="#projects">
-                        Projects
+                        <a>
+                            Projects
                         </a>
                     </li>
                     <li>
-                        <a href="#contact" className="contact">
+                        <a className="contact">
                             Contact
                         </a>
                     </li>
                 </ul>
             </nav>
             <div className="header-buttons">
-                <a href="#about">
+                <a>
                     About
                 </a>
-                <a href="#services">
+                <a>
                     Services
                 </a>
-                <a href="#projects">
+                <a>
                     Projects
                 </a>
-                <a href="#contact" className="contact">
+                <a className="contact">
                     Contact
                 </a>
             </div>
         </div>
         <h1>
             WE ARE CREATIVES
-            <img src={arrow} />
+            <img src={arrow} alt="Arrow"/>
         </h1>
     </section>
   )

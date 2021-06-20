@@ -11,7 +11,7 @@ export default function Clients() {
       <div className="clients-content">
         <div className="clients-opinions">
           <div>
-            <img src={emily} />
+            <img src={emily} alt="Avatar Emily" />
             <cite className="clients-opinions-description">
               We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
             </cite>
@@ -25,7 +25,7 @@ export default function Clients() {
             </p>
           </div>
           <div>
-            <img src={thomas} />
+            <img src={thomas} alt="Avatar Thomas"/>
             <cite className="clients-opinions-description">
               Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.
             </cite>
@@ -39,7 +39,7 @@ export default function Clients() {
             </p>
           </div>
           <div>
-            <img src={jennie} />
+            <img src={jennie} alt="Avatar Jennie"/>
             <cite className="clients-opinions-description">
               Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
             </cite>

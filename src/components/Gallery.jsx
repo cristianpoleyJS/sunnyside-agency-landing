@@ -4,10 +4,10 @@ import '../styles/gallery-styles.css'
 export default function Gallery() {
   return (
     <section className="gallery">
-      <span className="gallery-milkbottles"/>
-      <span className="gallery-orange"/>
-      <span className="gallery-cone"/>
-      <span className="gallery-sugarcubes"/>
+      <h2 className="gallery-milkbottles"/>
+      <h2 className="gallery-orange"/>
+      <h2 className="gallery-cone"/>
+      <h2 className="gallery-sugarcubes"/>
     </section>
   )
 }
