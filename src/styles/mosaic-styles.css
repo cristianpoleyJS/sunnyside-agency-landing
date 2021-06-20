@@ -1,0 +1,148 @@
+.mosaic {
+    display: grid;
+    grid-template-columns: var(--mosaic-grid-tc);
+}
+
+.mosaic > * {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.mosaic-brand,
+.mosaic-stand {
+    text-align: left;
+    padding: var(--mosaic-brand-stand-padding);
+}
+
+.mosaic-brand h2,
+.mosaic-stand h2 {
+    font-family: var(--font-family-fraunces);
+    font-weight: var(--font-900);
+    font-size: var(--mosaic-brand-stand-h2-font-size);
+}
+
+.mosaic-brand p,
+.mosaic-stand p {
+    line-height: var(--mosaic-brand-stand-p-line-height);
+    color: var(--dark-grayish-blue);
+    margin-bottom: 2rem;
+    font-size: var(--mosaic-brand-stand-p-font-size);
+}
+.mosaic-brand h4,
+.mosaic-stand h4 {
+    text-transform: uppercase;
+    font-family: var(--font-family-fraunces);
+    cursor: pointer;
+    position: relative;
+    font-size: 16px;
+    font-weight: 900;
+    width: max-content;
+}
+.mosaic-brand h4:after,
+.mosaic-stand h4:after {
+    z-index: -1;
+    content: '';
+    height: 10px;
+    border-radius: 8px;
+    top: 13px;
+    left: -8px;
+    width: 134px;
+    position: absolute;
+    filter: opacity(0.2);
+}
+.mosaic-brand h4:after {
+    background-color: var(--yellow);
+}
+.mosaic-stand h4:after {
+    background-color: var(--soft-red);
+}
+.mosaic-brand h4:hover:after,
+.mosaic-stand h4:hover:after {
+    filter: opacity(1);
+}
+
+.mosaic-transform {
+    background-image: var(--background-transform);
+}
+.mosaic-stand-out {
+    background-image: var(--background-stand-out);
+}
+.mosaic-graphic-design {
+    position: relative;
+    text-align: center;
+    background-image: var(--background-graphic-design);
+}
+.mosaic-photography {
+    position: relative;
+    text-align: center;
+    background-image: var(--background-photography);
+}
+
+.mosaic-graphic-design-content,
+.mosaic-photography-content {
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    top: 58%;
+}
+
+.mosaic-graphic-design-content h4,
+.mosaic-photography-content h4 {
+    font-size: var(--mosaic-graphic-photography-h4-font-size);
+    font-family: var(--font-family-fraunces);
+    font-weight: var(--font-900);
+    margin: 1.5rem 0 1rem;
+}
+.mosaic-graphic-design-content {
+    color: var(--dark-desatured);
+}
+.mosaic-photography-content {
+    color: var(--dark-blue);
+}
+
+.mosaic-graphic-design-content span,
+.mosaic-photography-content span {
+    line-height: var(--mosaic-graphic-photography-span-line-height);
+    max-width: 340px;
+    display: inline-block;
+    font-size: var(--mosaic-graphic-photography-span-font-size);
+    padding: var(--mosaic-graphic-photography-span-padding);
+}
+
+@media (max-width: 768px) {
+
+    .mosaic > * {
+        text-align: center;
+    }
+
+    .mosaic-brand h4,
+    .mosaic-stand h4 {
+        margin: 0 auto;
+    }
+    .mosaic-brand {
+        order: 1;
+        height: 440px;
+    }
+    .mosaic-transform {
+        order: 0;
+        height: 310px;
+    }
+    .mosaic-stand-out {
+        order: 2;
+        height: 310px;
+    }
+    .mosaic-stand {
+        order: 3;
+        height: 440px;
+    }
+    .mosaic-graphic-design {
+        order: 4;
+        height: 600px;
+    }
+    .mosaic-photography {
+        order: 5;
+        height: 600px;
+    }
+}

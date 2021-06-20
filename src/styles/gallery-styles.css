@@ -1,0 +1,24 @@
+.gallery {
+    display: grid;
+    height: 360px;
+    grid-template-columns: var(--gallery-grid-tc);
+}
+
+.gallery * {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gallery-milkbottles {
+    background-image: var(--background-milkbottles);
+}
+.gallery-orange {
+    background-image: var(--background-orange);
+}
+.gallery-cone {
+    background-image: var(--background-cone);
+}
+.gallery-sugarcubes {
+    background-image: var(--background-sugarcubes);
+}

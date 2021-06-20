@@ -1,0 +1,60 @@
+.header {
+    background-image: var(--background-header);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 2rem;
+    padding-right: var(--header-padding-right);
+    padding-bottom: 2rem;
+    padding-left: var(--header-padding-left);
+    height: 560px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header h1 {
+    text-align: center;
+    font-family: var(--font-family-fraunces);
+    font-size: var(--header-h1-font-size);
+    letter-spacing: 5px;
+    color: var(--white);
+    margin-top: 84px;
+}
+
+.header h1 img {
+    display: block;
+    margin: 3rem auto;
+    width: 34px;
+}
+
+.header-buttons {
+    display: var(--header-buttons-display);
+    flex: 0 0 350px;
+    justify-content: space-between;
+    height: max-content;
+}
+
+.header-buttons a {
+    color: var(--white);
+}
+
+.header-buttons a.contact {
+    text-align: center;
+    border-radius: 12px;
+    background-color: var(--white);
+    color: var(--text-color-green);
+    box-shadow: 0px 0px 0px 16px var(--white);
+
+    text-transform: uppercase;
+    font-family: var(--font-family-fraunces);
+    width: 88px;
+}
+
+.header-buttons a.contact:hover {
+    color: var(--white);
+    background-color: #6fcfff;
+    box-shadow: 0px 0px 0px 16px #6fcfff;
+}
