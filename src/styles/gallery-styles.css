@@ -23,7 +23,7 @@
     background-image: var(--background-sugarcubes);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
     .gallery {
         grid-template-columns: 50fr 50fr;
     }

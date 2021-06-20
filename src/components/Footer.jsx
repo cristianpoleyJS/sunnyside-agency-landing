@@ -11,7 +11,7 @@ export default function Footer() {
     <section className="footer">
         <div className="footer-content">
           <span className="footer-logo">
-            <Logo height={20} width={124} fill={'#2d7363'} />
+            <Logo height={30} width={124} fill={'#2d7363'} />
           </span>
           <div className="footer-buttons">
             <a href="#about">About</a>

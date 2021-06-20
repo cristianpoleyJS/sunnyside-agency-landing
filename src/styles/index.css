@@ -37,7 +37,7 @@
   --background-sugarcubes: url('../assets/desktop/image-gallery-sugarcubes.jpg');
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   :root {
     --background-header: url('../assets/mobile/image-header.jpg');
     

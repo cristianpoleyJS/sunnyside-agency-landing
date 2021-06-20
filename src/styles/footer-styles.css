@@ -13,6 +13,7 @@
     flex-wrap: wrap;
     max-width: 230px;
 }
+
 .footer-content > * {
     flex: 1 0 100%;
 }
@@ -28,6 +29,7 @@
 }
 
 .footer-buttons a {
+    filter: brightness(1.6);
     color: var(--dark-desatured);
 }
 
@@ -48,4 +50,18 @@
 }
 .footer-social-media img:hover {
     filter: brightness(1000%);
+}
+
+@media (max-width: 768px) {
+    .footer {
+        height: 350px;
+    }
+
+    .footer-buttons a {
+        font-size: 16px;
+        filter: brightness(1.6);
+    }
+    .footer-buttons {
+        margin: 0 auto 4rem;
+    }
 }

@@ -5,7 +5,7 @@ export default function Mosaic() {
   return (
     <section className="mosaic">
         <div className="mosaic-brand">
-          <h2>Transform your<br/>brand</h2>
+          <h2>Transform your brand</h2>
           <p>
             We are a full-service creative agency specializing in helping brands grow fast.
             Engage your clients through compeling visuals that do most of the marketing for you.
@@ -17,7 +17,7 @@ export default function Mosaic() {
         <div className="mosaic-transform" />
         <div className="mosaic-stand-out" />
         <div className="mosaic-stand">
-          <h2>Stand out to the right<br/>audience</h2>
+          <h2>Stand out to the right audience</h2>
           <p>
             Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.
           </p>

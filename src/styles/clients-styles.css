@@ -1,5 +1,5 @@
 .clients {
-    padding: 160px 2rem;
+    padding: 120px 2rem;
     text-align: center;
 }
 
@@ -11,6 +11,7 @@
     font-family: var(--font-family-fraunces);
     font-size: 24px;
     letter-spacing: 4px;
+    font-weight: 900;
 }
 
 .clients-opinions {
@@ -43,7 +44,28 @@
 }
 .clients-opinions-name-position sub {
     font-size: 14px;
-    margin-top: 1rem;
+    margin-top: 12px;
     display: block;
     color: var(--grayish-blue);
+}
+@media (max-width: 768px) {
+    .clients-opinions {
+        grid-template-columns: 100fr;
+    }
+    .clients {
+        padding: 4rem 0;
+    }
+    .clients h1 {
+        font-size: 16px;
+        margin: 0 0 60px;
+    }
+    .clients-opinions img {
+        margin-bottom: 1.5rem;
+    }
+    .clients-opinions-description {
+        font-size: 18px;
+        line-height: 30px;
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+    }
 }

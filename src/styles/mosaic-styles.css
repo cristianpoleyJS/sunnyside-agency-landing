@@ -36,6 +36,7 @@
     position: relative;
     font-size: 16px;
     font-weight: 900;
+    width: max-content;
 }
 .mosaic-brand h4:after,
 .mosaic-stand h4:after {
@@ -108,8 +109,66 @@
     padding: 0 1rem;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
     .mosaic {
         grid-template-columns: 100fr;
+    }
+
+    .mosaic > * {
+        text-align: center;
+    }
+
+    .mosaic-brand,
+    .mosaic-stand {
+        padding: 3rem 1.5rem;
+    }
+    .mosaic-brand h2,
+    .mosaic-stand h2 {
+        font-size: 32px;
+    }
+    .mosaic-brand p,
+    .mosaic-stand p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .mosaic-brand h4,
+    .mosaic-stand h4 {
+        margin: 0 auto;
+    }
+    .mosaic-graphic-design-content h4,
+    .mosaic-photography-content h4 {
+        font-size: 30px;
+    }
+    .mosaic-graphic-design-content span,
+    .mosaic-photography-content span {
+        font-size: 16px;
+        line-height: 26px;
+        padding: 0;
+    }
+
+    .mosaic-brand {
+        order: 1;
+        height: 440px;
+    }
+    .mosaic-transform {
+        order: 0;
+        height: 310px;
+    }
+    .mosaic-stand-out {
+        order: 2;
+        height: 310px;
+    }
+    .mosaic-stand {
+        order: 3;
+        height: 440px;
+    }
+    .mosaic-graphic-design {
+        order: 4;
+        height: 600px;
+    }
+    .mosaic-photography {
+        order: 5;
+        height: 600px;
     }
 }
